@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Transport for London - Transport Status Updater v4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a7dac6d528.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <h1 align="center">London Transport Live Status</h1>
+      <div id="timeUpdated" class="row-fluid center-align">
+        <h6 align="center">Last Updated: <span id="time"></span></h6></div>
+        <div id="reloadPage"><button type='button' id='updateStatus' class='btn btn-primary btn-xs btn-block'><h4>Reload</h4></button></div>
+          <div class="well">
+            <div class="container-fluid">
+              <div class="row" id="content">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyright" class="row-fluid center-align">
+          <h6>Powered by TfL Open Data - Contains OS data © Crown copyright and database rights 2020</h6>
+          <h6>Website code and design © Nick Smith 2020, development@newsworthyvision.com</h6>
+          <br>
+          <h6>Changelog:</h6>
+          <small>09/01/2017 - Tube strike threw new status titles at me. Adjusted code to suit.<br>
+            16/02/2020 - Didn't have a "Reduced service" option. Fixed!<br>
+            22/02/2020 - Added icons, improved readability, altered colours to TFL standard and reduced code duplication
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
